@@ -1,0 +1,132 @@
+/**
+* This file provides the general structure of this site.
+* There is no "minimal" version of this file; what you see is exactly what's included on your site.
+*/
+@import url('https://fonts.googleapis.com/css?family=Dosis|Playfair+Display');
+
+body {
+  background-color: white;
+  font-family: 'Dosis', sans-serif;
+  margin: 0 auto;
+}
+
+/* Site Template */
+.title{
+  display: block;
+  background-color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  opacity: .8;
+  z-index: 2;
+  position: absolute;
+  bottom: 0%;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  display: relative;
+  font-weight: bold;
+  font-size: 62px;
+  color: #612C3C;
+  margin: 1%;
+  opacity: 1;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+  color: #612C3C;
+  margin: 0 auto;
+}
+h4{
+  color: #612C3C;
+  margin-bottom:0;
+}
+
+p{
+  color: #504746;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  display: inline-block;
+  background-color: #A54938;
+  margin: 0 auto 5px auto;
+  padding: 0;
+  height: 4em;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  margin: 0 auto;
+  padding: 0 5%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #612C3C;
+  transition: 0.3s;
+}
+
+#spacing{
+  height: 5em;
+}
+/* Content Container */
+.containerImage {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+}
+.info{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.content{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+/*Image Carousel*/
+#image{
+  display: block;
+  margin: 0 auto;
+  height: 20em;
+  z-index: 0;
+  width: auto;
+}
+
+#icon{
+  position:relative;
+  margin-top: 1%;
+  z-index: 0;
+  width: 4%;
+}
+
+/* Footer */
+footer {
+  background-color: #A54938;
+  color: grey;
+  display: block;
+  font-size: 10px;
+  margin: 10px auto 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 80%;
+}
