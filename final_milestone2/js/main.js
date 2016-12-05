@@ -1,11 +1,11 @@
 /*
 * Image Cycle Function
-* Code taken from Info 1300 Fall 2016
+* Code adapted from Info 1300 Fall 2016
 * Class taught by Steve Paling
 */
 
 var index = 1;
-var pix = ["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg", "img05.jpg"];
+var pix = ["banner01.jpg", "banner02.jpg", "banner03.jpg", "banner04.jpg", "banner05.jpg", "banner06.jpg", "banner07.jpg", "banner08.jpg", "banner09.jpg"];
 var main_image = document.getElementById('image');
 
 // functions
@@ -28,23 +28,3 @@ function pic_cycle() {
 
 // function call
 pic_cycle();
-
-/*
-* Date in Footer Function
-*/
-window.onload = function set_date(){
-  "use strict";
-  // variables
-  var namesOfMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],        // get pieces of date
-      this_date = new Date(),
-      month = namesOfMonths[this_date.getMonth()],
-      number = this_date.getDate(),
-      year = this_date.getFullYear();
-      // set information up for insertion into DOM tree
-  var new_span = document.createElement('span'),
-      new_text = document.createTextNode(number + ' ' + month + ' ' + year),
-      position = document.getElementsByTagName('footer')[0];
-  // append date to footer
-  new_span.appendChild(new_text);
-  position.appendChild(new_span);
-  }

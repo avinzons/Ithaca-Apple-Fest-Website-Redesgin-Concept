@@ -2,31 +2,32 @@
 * This file provides the general structure of this site.
 * There is no "minimal" version of this file; what you see is exactly what's included on your site.
 */
-@import url('https://fonts.googleapis.com/css?family=Dosis|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Chelsea+Market');
 
 body {
   background-color: white;
-  font-family: 'Dosis', sans-serif;
-  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  /*border: 0;
+  padding: 0;*/
 }
 
 /* Site Template */
 .title{
   display: block;
   background-color: white;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 0;
   opacity: .8;
   z-index: 2;
   position: absolute;
   bottom: 0%;
-  top: 70%;
+  top: 80%;
   width: 100%;
   text-align: center;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Chelsea Market', cursive;
   display: relative;
   font-weight: bold;
   font-size: 62px;
@@ -36,7 +37,7 @@ h1 {
 }
 
 h2{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Chelsea Market', cursive;
   color: #612C3C;
   margin: 0 auto;
 }
@@ -54,7 +55,7 @@ nav {
   position: fixed;
   display: inline-block;
   background-color: #A54938;
-  margin: 0 auto 5px auto;
+  margin: 0 auto;
   padding: 0;
   height: 4em;
   text-align: center;
@@ -65,11 +66,10 @@ nav {
 nav a {
   color: white;
   display: inline-block;
-  height: 4em;
+  height: 100%;
   line-height: 4em;
-  margin: 0 auto;
-  padding: 0 5%;
-  text-decoration: none;
+  padding-left: 4%;
+  padding-right: 4%;
   transition: 0.3s;
 }
 
@@ -79,44 +79,70 @@ nav a:hover {
 }
 
 #spacing{
-  height: 5em;
+  height: 4em;
 }
 /* Content Container */
 .containerImage {
   position: relative;
   display: block;
   font-size: 18px;
-  height: 100%;
-  margin: 0 auto;
-  width: 90%;
+  margin: 0;
+  width: 100%;
+  margin: 0;
+
 }
-.info{
-  margin-top: 1em;
-  text-align: center;
+
+#sponsor{
 }
 
 .content{
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: left;
+}
+
+.section{
+  margin: 0 auto;
+  margin-top: 3%;
+  padding-right: 2em;
+  border-bottom: #504746 solid 1px;
+  margin-bottom: 2px;
+}
+
+.smIcon{
+  width:2%;
 }
 
 /*Image Carousel*/
 #image{
   display: block;
   margin: 0 auto;
-  height: 20em;
+  width: 100%;
   z-index: 0;
-  width: auto;
+}
+
+#sectionImgRight{
+  float:right;
+  margin-right: 8em;
+  margin-left: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#sectionImgLeft{
+  float:left;
+  margin-left: 8em;
+  margin-right: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #icon{
   position:relative;
-  margin-top: 1%;
   z-index: 0;
-  width: 4%;
+  width: 31px;
 }
 
 /* Footer */
@@ -124,9 +150,16 @@ footer {
   background-color: #A54938;
   color: grey;
   display: block;
-  font-size: 10px;
-  margin: 10px auto 0 auto;
-  padding: 10px 0;
+  height: 20%;
+  margin: 0 auto;
   text-align: center;
   width: 80%;
+}
+
+table{
+  padding: 0;
+}
+
+th,tr{
+  padding:2px;
 }
