@@ -27,7 +27,7 @@ body {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  display: relative;
+  position: relative;
   font-weight: bold;
   font-size: 62px;
   color: #612C3C;
@@ -40,6 +40,7 @@ h2{
   color: #612C3C;
   margin: 0 auto;
 }
+
 h4{
   color: #612C3C;
   margin-bottom:0;
@@ -90,6 +91,7 @@ nav a:hover {
   margin: 0 auto;
   width: 90%;
 }
+
 .info{
   margin-top: 1em;
   text-align: center;
@@ -103,6 +105,64 @@ nav a:hover {
   text-align: center;
 }
 
+.top{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2em;
+  padding-bottom: 1%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  margin-top: 3em;
+  padding-bottom: 2em;
+  position: relative;
+  font-size: 18px;
+}
+
+.bold {
+   font-weight: 900;
+}
+
+.bold2 {
+   font-weight: bold;
+}
+
+
+#banner{
+    background-color: #A54938; 
+    text-align: center;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+}
+
+#left_col{
+   position: absolute;
+   width: 30%;
+   left: 0;
+   font-size: 100%;
+   text-align: center;
+}
+
+#middle_col{
+  position: absolute;
+  width: 30%;
+  margin-left: 35%;
+  font-size: 100%;
+  text-align: center;
+}
+
+#right_col{
+  position: absolute;
+  width: 30%;
+  right: 0;
+  font-size: 100%;
+  text-align: center;
+}
+
 /*Image Carousel*/
 #image{
   display: block;
@@ -110,6 +170,22 @@ nav a:hover {
   height: 20em;
   z-index: 0;
   width: auto;
+}
+
+#one_col{
+   margin-top: 5em;
+   position: absolute;
+   width: 40%;
+   left: 5%;
+   text-align: center;
+}
+
+#two_col{
+  margin-top: 5em;
+  position: absolute;
+  width: 40%;
+  left: 55%;
+  text-align: center;
 }
 
 #icon{
